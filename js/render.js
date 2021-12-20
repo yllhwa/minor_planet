@@ -34,7 +34,7 @@ function initCamera() {
 function initScene() {
   scene = new THREE.Scene();
   const loader = new THREE.CubeTextureLoader();
-  let texture = loader.load(backgroundImg);
+  let texture = loader.load([backgroundImg]);
   texture.encoding = THREE.sRGBEncoding;
   scene.background = texture;
 }
